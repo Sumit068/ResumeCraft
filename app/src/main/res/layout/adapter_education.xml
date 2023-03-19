@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15sp"
+    android:background="@drawable/adapter_background">
+
+    <TextView
+        android:id="@+id/education_university"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/university"
+        android:minHeight="48sp"
+        android:padding="5sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/education_degree"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/education_degree"
+        app:layout_constraintTop_toBottomOf="@+id/education_school"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/education"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/delete_education"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/education_degree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/course_degree"
+        android:minHeight="48sp"
+        android:padding="5sp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/education_school"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/school_college"
+        android:minHeight="48sp"
+        android:padding="5sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/education_degree"
+        app:layout_constraintStart_toStartOf="@+id/education_degree"
+        app:layout_constraintTop_toBottomOf="@+id/education_degree"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/education_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/grade_score"
+        android:minHeight="48sp"
+        android:padding="5sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/education_school"
+        app:layout_constraintStart_toStartOf="@+id/education_school"
+        app:layout_constraintTop_toBottomOf="@+id/education_university"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/education_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/year"
+        android:minHeight="48sp"
+        android:padding="5sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/education_score"
+        app:layout_constraintStart_toStartOf="@+id/education_score"
+        app:layout_constraintTop_toBottomOf="@+id/education_score"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/delete_education"
+        android:layout_width="50sp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

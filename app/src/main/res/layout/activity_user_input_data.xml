@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_background"
+    tools:context=".UserInputData">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:fontFamily="@font/alegreya_sans_sc_bold"
+        android:padding="5sp"
+        android:text="@string/create_profile"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personal_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/personal_details"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_person"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/education_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/education"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_education"
+        app:layout_constraintEnd_toEndOf="@+id/personal_details"
+        app:layout_constraintStart_toStartOf="@+id/personal_details"
+        app:layout_constraintTop_toBottomOf="@+id/personal_details"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/experience_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/experience"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_experience"
+        app:layout_constraintEnd_toEndOf="@+id/education_details"
+        app:layout_constraintStart_toStartOf="@+id/education_details"
+        app:layout_constraintTop_toBottomOf="@+id/education_details"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/skill_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/skills"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_skills"
+        app:layout_constraintEnd_toEndOf="@+id/experience_details"
+        app:layout_constraintStart_toStartOf="@+id/experience_details"
+        app:layout_constraintTop_toBottomOf="@+id/experience_details"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/project_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/projects"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_projects"
+        app:layout_constraintEnd_toEndOf="@+id/skill_details"
+        app:layout_constraintStart_toStartOf="@+id/skill_details"
+        app:layout_constraintTop_toBottomOf="@+id/skill_details"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/objective_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:padding="10sp"
+        android:text="@string/objective"
+        android:textColor="#00BFFF"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_objective"
+        app:layout_constraintEnd_toEndOf="@+id/project_details"
+        app:layout_constraintStart_toStartOf="@+id/project_details"
+        app:layout_constraintTop_toBottomOf="@+id/project_details"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_your_resume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/view_text_background"
+        android:backgroundTint="#00ACC1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/objective_details"
+        app:layout_constraintStart_toStartOf="@+id/objective_details">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ACC1"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/alegreya_sans_sc_medium"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="@string/preview"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:drawableStartCompat="@drawable/ic_preview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/others_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_text_background"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Others"
+        android:textColor="#00BFFF"
+        android:textSize="22dp"
+        app:drawableLeftCompat="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="@+id/objective_details"
+        app:layout_constraintStart_toStartOf="@+id/objective_details"
+        app:layout_constraintTop_toBottomOf="@+id/objective_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

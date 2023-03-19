@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    tools:context=".FragmentOthers">
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:text="Others"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/interest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Interest"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:minHeight="120dp"
+        android:padding="10dp"
+        android:textColor="@color/input_font"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Fields of Interest"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Strength"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/interest"
+        app:layout_constraintStart_toStartOf="@+id/interest"
+        app:layout_constraintTop_toBottomOf="@+id/interest" />
+
+    <EditText
+        android:id="@+id/strength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Strength"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:minHeight="120dp"
+        android:padding="10dp"
+        android:textColor="@color/input_font"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hobbies"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/strength"
+        app:layout_constraintStart_toStartOf="@+id/strength"
+        app:layout_constraintTop_toBottomOf="@+id/strength" />
+
+    <EditText
+        android:id="@+id/hobbies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_single_line_text_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Hobbies"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:minHeight="120dp"
+        android:padding="10dp"
+        android:textColor="@color/input_font"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <Button
+        android:id="@+id/others_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#00ACC1"
+        android:text="@string/save"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hobbies"
+        app:layout_constraintStart_toStartOf="@+id/hobbies" />
+</androidx.constraintlayout.widget.ConstraintLayout>

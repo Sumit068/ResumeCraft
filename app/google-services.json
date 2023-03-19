@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "772194025016",
+    "project_id": "resumecraftauth",
+    "storage_bucket": "resumecraftauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772194025016:android:44b111bc41d0f23350f0cd",
+        "android_client_info": {
+          "package_name": "com.example.resumecraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772194025016-qb8eno4arpmdbrtqqvrjc6jhsrsg41oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0OWwMKSR3TAYRxCvBJ7Dk4uGvGM3fU6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772194025016-qb8eno4arpmdbrtqqvrjc6jhsrsg41oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

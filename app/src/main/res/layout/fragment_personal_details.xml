@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    tools:context=".FragmentPersonalDetails">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:fontFamily="@font/alegreya_sans_sc_bold"
+        android:padding="5sp"
+        android:text="@string/personal_details"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/personal_details_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/alegreya_sans_sc_bold"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/name"
+                android:textColor="#515050"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_personal_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/input_single_line_text_background"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:maxLength="35"
+                android:minHeight="48dp"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/input_font"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alegreya_sans_sc_bold"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/e_mail"
+                android:textColor="#515050"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/input_personal_name"
+                app:layout_constraintStart_toStartOf="@+id/input_personal_name"
+                app:layout_constraintTop_toBottomOf="@+id/input_personal_name" />
+
+            <EditText
+                android:id="@+id/input_personal_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/input_single_line_text_background"
+                android:ems="10"
+                android:hint="xyz@gmail.com"
+                android:inputType="textEmailAddress"
+                android:maxLength="60"
+                android:minHeight="48dp"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/input_font"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView20"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alegreya_sans_sc_bold"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="mobile number"
+                android:textColor="#515050"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/input_personal_email"
+                app:layout_constraintStart_toStartOf="@+id/input_personal_email"
+                app:layout_constraintTop_toBottomOf="@+id/input_personal_email" />
+
+            <EditText
+                android:id="@+id/input_personal_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/input_single_line_text_background"
+                android:ems="10"
+                android:hint="9876543210"
+                android:inputType="number"
+                android:maxLength="30"
+                android:minHeight="48dp"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/input_font"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView21"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alegreya_sans_sc_bold"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/address"
+                android:textColor="#515050"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/input_personal_number"
+                app:layout_constraintStart_toStartOf="@+id/input_personal_number"
+                app:layout_constraintTop_toBottomOf="@+id/input_personal_number" />
+
+            <EditText
+                android:id="@+id/input_personal_address"
+                android:layout_width="0dp"
+                android:layout_height="120sp"
+                android:autofillHints=""
+                android:background="@drawable/input_single_line_text_background"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/address"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/input_font"
+                android:textColorHint="#78909C"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/input_personal_image"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/resume_pic"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="@+id/input_personal_address"
+                app:layout_constraintTop_toBottomOf="@+id/input_personal_address"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                android:id="@+id/personal_image_upload"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#00BFFF"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/upload"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/personal_image_remove"
+                app:layout_constraintEnd_toEndOf="@+id/input_personal_address"
+                app:layout_constraintStart_toEndOf="@+id/input_personal_image"
+                app:layout_constraintTop_toTopOf="@+id/input_personal_image"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/personal_image_remove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#00BFFF"
+                android:fontFamily="sans-serif-medium"
+                android:text="REMOVE"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/personal_image_upload"
+                app:layout_constraintStart_toStartOf="@+id/personal_image_upload"
+                app:layout_constraintTop_toBottomOf="@+id/personal_image_upload"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/personal_details_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/view_text_background"
+        android:backgroundTint="#00ACC1"
+        android:text="@string/save"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
